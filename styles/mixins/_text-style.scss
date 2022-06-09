@@ -8,10 +8,6 @@
   font-size: $font-size-13;
   line-height: $line-height-13;
   letter-spacing: $letter-spacing-13;
-
-  @if (type-of($color) == color) {
-    color: $color;
-  }
 }
 
 @mixin text-style-14() {
