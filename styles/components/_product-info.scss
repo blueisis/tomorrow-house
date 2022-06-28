@@ -35,19 +35,9 @@
   }
 
   &-price {
-    margin-bottom: 16px;
-
     .info-original-price,
     .info-sale-price {
       @include flexbox(start);
-    }
-
-    .info-sale-price {
-      margin-bottom: 12px;
-    }
-
-    .price-20 {
-      margin-right: 4px;
     }
 
     .discount-rate {
@@ -66,8 +56,13 @@
       }
     }
 
+    .info-sale-price {
+      margin-bottom: 12px;
+    }
+
     .info-point {
       @include text-style(13, $secondary);
+      margin-bottom: 16px;
 
       strong {
         margin-right: 4px;
@@ -113,8 +108,39 @@
     }
 
     &-price {
+      margin-bottom: 0;
+
       .info-price-wrapper {
+        @include flexbox(start, end);
+        margin-bottom: 12px;
+      }
+
+      .discount-rate {
+        align-items: flex-end;
+        margin-right: 16px;
+
+        .rate {
+          margin-right: 2px;
+          font-size: 44px;
+          line-height: 36px;
+        }
+
+        .percent {
+          line-height: 1;
+        }
+      }
+
+      .info-price-sale {
         @include flexbox(start);
+        margin-bottom: 0;
+
+        .price-32 {
+          margin-right: 8px;
+        }
+      }
+
+      .info-point {
+        margin-bottom: 20px;
       }
     }
 
