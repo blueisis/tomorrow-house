@@ -8,6 +8,7 @@
 
   &-list {
     @include inline-flexbox(start);
+    width: 100vw;
     height: $lnb-height-sm;
     padding: 0 #{$grid-margin - $lnb-link-padding};
     margin-left: -#{$grid-margin};
