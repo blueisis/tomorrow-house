@@ -1,0 +1,43 @@
+.product-tab {
+  $grid-margin: $sm-margin + $gutter / 2;
+
+  width: 100%;
+  height: 40px;
+  background-color: $white;
+  border-bottom: 1px solid $border;
+
+  &-list {
+    @include flexbox;
+    margin: 0 -#{$grid-margin}; // list에게 width 값을 정해주지 않았을때 늘어남
+  }
+
+  &-item {
+    width: (100% / 5);
+
+    &.is-active {
+      button {
+        color: $blue;
+        border-bottom: 2px solid $blue;
+      }
+    }
+
+    button {
+      @include flexbox;
+      @include text-style(13, $dark);
+      width: 100%;
+      height: 40px;
+      font-weight: 700;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent; // is-active시 보더가 생기면 40px -> 38px이 되는 현상을 해결하기 위함
+
+      &:active {
+        color: $blue;
+      }
+
+      .badge {
+        margin-left: 4px;
+        color: $secondary;
+      }
+    }
+  }
+}
