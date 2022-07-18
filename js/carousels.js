@@ -18,6 +18,9 @@ const userGallery = tns({
   gutter: 4, // 사이 간격
   edgePadding: 16, // 다음 아이템 보이는 넓이
   controls: false,
+  controlsContainer: '.user-gallery-controls', // prev, next 버튼 박스
+  navContainer: '.user-gallery .thumbnail-list',
+  navAsThumbnails: true,
   loop: false,
   arrowKeys: true,
   mouseDrag: true,
