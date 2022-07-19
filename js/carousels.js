@@ -13,23 +13,29 @@ const productCarousel = tns({
   // autoplay: true
 });
 
-const userGallery = tns({
-  container: '.user-gallery .slider-list',
+const userGalleryMobile = tns({
+  container: '.user-gallery.is-mobile .slider-list',
   gutter: 4, // 사이 간격
   edgePadding: 16, // 다음 아이템 보이는 넓이
   controls: false,
-  controlsContainer: '.user-gallery-controls', // prev, next 버튼 박스
-  navContainer: '.user-gallery .thumbnail-list',
+  navContainer: '.user-gallery.is-mobile .thumbnail-list',
   navAsThumbnails: true,
   loop: false,
   arrowKeys: true,
   mouseDrag: true,
   preventScrollOnTouch: true,
-  responsive: {
-    768: {
-      gutter: 6,
-      edgePadding: 75,
-      controls: true,
-    }
-  }
+})
+
+const userGalleryDesktop = tns({
+  container: '.user-gallery.is-desktop .slider-list',
+  gutter: 6, // 사이 간격
+  edgePadding: 75, // 다음 아이템 보이는 넓이
+  controls: true,
+  controlsContainer: '.user-gallery.is-desktop .user-gallery-controls', // prev, next 버튼 박스
+  navContainer: '.user-gallery.is-desktop .thumbnail-list',
+  navAsThumbnails: true,
+  loop: false,
+  arrowKeys: true,
+  mouseDrag: true,
+  preventScrollOnTouch: true,
 })
