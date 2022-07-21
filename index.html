@@ -1632,7 +1632,7 @@
         </div>
 
         <div class="col-lg-4 lg-only">
-          <form class="floating-order-form lg-only" action="/" method="POST">
+          <form class="floating-order-form order-form" action="/" method="POST">
             <div class="order-inputs">
               <div class="select-group is-active">
                 <select class="form-select" id="floating-order-form-select-1" required>
@@ -1658,12 +1658,15 @@
               </div>
             </div>
 
-            <div class="order-checkout">
+            <div class="order-checkouts">
               <ul class="checkout-list">
                 <li class="checkout-item">
                   <div class="checkout-card">
                     <header class="checkout-header">
-                      <h4 class="checkout-title">추가상품 - 맛있는 제주 감귤을 직배송 / 제주도 귤 판매 1위 믿고 구매하세요.</h4>
+                      <h4 class="checkout-title">
+                        추가상품 - 맛있는 제주 감귤을 직배송 / 제주도 귤 판매
+                        1위 믿고 구매하세요.
+                      </h4>
                       <button class="delete-button" type="button" aria-label="해당 상품을 삭제하기">
                         <i class="ic-close" aria-hidden></i>
                       </button>
@@ -1706,33 +1709,40 @@
             </dl>
 
             <div class="button-group">
-              <button class="bookmark-button is-active btn-55" type="button" aria-label="북마크에 추가">
-                <i class="ic-bookmark"></i>
+              <button class="bookmark-button btn-55" type="button" aria-label="북마크에 추가">
+                <i class="ic-bookmark" aria-hidden></i>
               </button>
-              <button class="bookmark-button btn-55" type="button" aria-label="북마크 해제">
-                <i class="ic-bookmark"></i>
+              <!-- <button
+                class="bookmark-button is-active btn-55"
+                type="button"
+                aria-label="북마크에 해제"
+              >
+                <i class="ic-bookmark-filled" aria-hidden></i>
+              </button> -->
+              <button class="btn-outlined btn-55" type="button">
+                장바구니
               </button>
-              <button class="btn-outlined btn-55" type="button">장바구니</button>
-              <button class="btn-primary btn-55" type="submit">바로구매</button>
+              <button class="btn-primary btn-55" type="submit">
+                바로구매
+              </button>
             </div>
           </form>
         </div>
       </div>
-    </div>
 
-    <div class="order-cta lg-hidden">
-      <!-- 북마크를 하지 않았을 때 -->
-      <button class="btn-ghost btn-48" type="button">
-        <i class="ic-bookmark" aria-hidden></i>
-        <span aria-label="북마크 18,302회">18,302</span>
-      </button>
-      <!-- 북마크를 했을 때 -->
-      <!-- <button class="btn-ghost btn-48 is-active" type="button">
+      <div class="order-cta lg-hidden">
+        <!-- 북마크를 하지 않았을 때 -->
+        <button class="btn-ghost btn-48" type="button">
+          <i class="ic-bookmark" aria-hidden></i>
+          <span aria-label="북마크 18,302회">18,302</span>
+        </button>
+        <!-- 북마크를 했을 때 -->
+        <!-- <button class="btn-ghost btn-48 is-active" type="button">
         <i class="ic-bookmark-filled" aria-hidden></i>
         <span aria-label="북마크 18,302회">18,303</span>
       </button> -->
-      <button class="btn-primary btn-48" type="button">구매하기</button>
-    </div>
+        <button class="btn-primary btn-48" type="button">구매하기</button>
+      </div>
   </main>
 
   <footer class="global-footer">
