@@ -2,8 +2,6 @@ const orderCta = document.querySelector('.order-cta')
 
 const [orderCtaBookmarkButton, orderCtaBuyButton] = orderCta.children
 
-console.log(orderCtaBookmarkButton, orderCtaBuyButton)
-
 const orderModal = document.querySelector('.order-form-modal')
 const orderModalOverlay = document.querySelector('.overlay')
 
