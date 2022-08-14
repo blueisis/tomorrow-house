@@ -1,7 +1,5 @@
 const reviewLikeButtonList = document.querySelectorAll('.review-card-footer button')
 
-console.log(reviewLikeButtonList);
-
 const HELPFUL = '도움됨'
 const NOT_HELPFUL = '도움이 돼요'
 // const checkIcon = '<i class="ic-check" aria-hidden></i>'
